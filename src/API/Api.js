@@ -1,11 +1,9 @@
-import React from 'react'
+import data from './data.json';
 
-const Api = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+function getData() {
+  return new Promise((resolve) => {
+    setTimeout(resolve(data));
+  }, 1000);
 }
 
-export default Api
+export { getData };
