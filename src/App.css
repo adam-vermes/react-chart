@@ -4,9 +4,9 @@
   justify-content: space-around;
 }
 
-/* .link-item {
-} */
-
-body {
-  background-color: #282c34;
+html,
+body,
+#root,
+.App {
+  height: 100%;
 }
