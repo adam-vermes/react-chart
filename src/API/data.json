@@ -1,6 +1,4 @@
-[{"id":"6ad11170-ee30-48de-a819-06dbc549796f","date":"9/15/2015","category":"Class F","event":"Echo","level":"L"},
-{"id":"1d6af815-e640-4aa5-90d8-0ddb1584b443","date":"3/8/2018","category":"Class D","event":"XRay","level":"H"},
-{"id":"19af86e8-79c2-4108-8df7-3b0375d041bf","date":"5/18/2016","category":"Class C","event":"XRay","level":"H"},
+[
 {"id":"e0420799-283f-4096-8658-b3ace0d66052","date":"5/19/2016","category":"Class C","event":"ECG","level":"M"},
 {"id":"3329f284-e6d8-4ab2-936d-17da40ee0514","date":"9/12/2015","category":"Class B","event":"MMT","level":"L"},
 {"id":"dcb6ffae-32a7-409d-9cc2-a209498ce6bb","date":"5/15/2018","category":"Class B","event":"MMT","level":"L"},
