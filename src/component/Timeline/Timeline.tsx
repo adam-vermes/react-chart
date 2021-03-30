@@ -5,11 +5,11 @@ import './Timeline.css';
 
   enum Category {
     CLASSA = 1,
-    CLASSB = 2,
-    CLASSC = 3,
-    CLASSD = 4,
-    CLASSE = 5,
-    CLASSF = 6
+    CLASSB,
+    CLASSC,
+    CLASSD,
+    CLASSE,
+    CLASSF
   }
 
   const categoryKey: any = {
@@ -40,48 +40,41 @@ const Timeline = () => {
           show: true,
           offsetX: 0,
           offsetY: 0,
-          tools: {
-            download: false,
-            selection: false,
-            zoom: false,
-            zoomin: true,
-            zoomout: true,
-            pan: false,
-            reset: false,
-            customIcons: []
+            tools: {
+              download: false,
+              selection: false,
+              zoom: false,
+              zoomin: true,
+              zoomout: true,
+              pan: false,
+              reset: false,
+              customIcons: []
+            },
           },
-      },
-      tooltip: {
-  custom: function({series, seriesIndex, dataPointIndex, }: any) {
-    return '<div class="arrow_box">' +
-      '<span>' + series[seriesIndex][dataPointIndex] + '</span>' +
-      '</div>'
-  }
-}
-    },
-      yaxis: {
-        labels: {
-          formatter: (idx: any) => {
-            const obj = Object.fromEntries(Object.entries(categoryKey));
-            const value =  Object.keys(obj).find(key => obj[key] === idx);
-            return `${value}`
-          }
         },
-      },
-      xaxis: {
-        type: "datetime"
-      },
-      grid: {
-        row: {
-          colors: ['rgb(43, 45, 46)', 'rgb(29, 31, 32)']
+        yaxis: {
+          labels: {
+            formatter: (idx: any) => {
+              const obj = Object.fromEntries(Object.entries(categoryKey));
+              return `${Object.keys(obj).find(key => obj[key] === idx)}`
+            }
+          },
         },
-      },
-      dataLabels: {
-        enabled: true,
-      },
-      stroke: {
-        curve: 'smooth',
-      },
+        xaxis: {
+          type: "datetime",
+          
+        },
+        grid: {
+          row: {
+            colors: ['rgb(43, 45, 46)', 'rgb(29, 31, 32)']
+          },
+        },
+        dataLabels: {
+          enabled: true,
+        },
+        stroke: {
+          curve: 'smooth',
+        },
     },
       series: [
         {
