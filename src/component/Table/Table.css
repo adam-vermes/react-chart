@@ -51,18 +51,11 @@
     border: 1px solid black;
   }
 
-  .table thead tr:first-child {
+  .table thead tr {
     font-weight: bold;
     font-size: 40px;
     position: sticky;
     top: 0;
-  }
-
-  /* .table thead th:first-child {
     display: none;
-    font-weight: bold;
-    font-size: 40px;
-    position: sticky;
-    top: 0;
-  } */
+  }
 }
